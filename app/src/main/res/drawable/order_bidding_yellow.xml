@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/logo_color" />
+    <corners android:topLeftRadius="6dp"
+        android:bottomLeftRadius="6dp"/> <!-- Set your desired background color -->
+</shape>

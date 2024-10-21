@@ -1,0 +1,65 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="30dp">
+
+    <ImageView
+        android:id="@+id/backArrowCancelPopUp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/logo_color" />
+
+    <TextView
+        android:id="@+id/enteramounttxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:text="@string/cancel_reason"
+        android:textColor="@color/black_dark"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".9" />
+
+
+    <TextView
+        android:id="@+id/reason1Txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_background_color"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Unforeseen problems prevented the start of the journey
+provide another sentence like this"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/enteramounttxt"
+        app:layout_constraintTop_toBottomOf="@+id/enteramounttxt"
+        app:layout_constraintWidth_percent=".9" />
+
+
+    <TextView
+        android:id="@+id/reason2Txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_background_color"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Traffic or road conditions"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/reason1Txt"
+        app:layout_constraintTop_toBottomOf="@+id/reason1Txt"
+        app:layout_constraintWidth_percent=".9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

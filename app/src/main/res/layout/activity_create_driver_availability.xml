@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Driver.CreateDriverAvailabilityActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topConsAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/earth_yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".9">
+
+
+            <ImageView
+                android:id="@+id/backArrowAddAv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/back"
+                app:tint="@color/white" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Add Availability"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topConsAdd"
+        app:layout_constraintWidth_percent=".9">
+
+
+        <TextView
+            android:id="@+id/createTimeSlotStatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Select Start Date and Time"
+            android:textAllCaps="false"
+            android:textColor="@color/black_dark"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintNCSStaic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createTimeSlotStatic">
+
+            <TextView
+                android:id="@+id/startDateTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/slot_background"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:text="Start Date"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintEnd_toStartOf="@+id/startTimetxt"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/startTimetxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/slot_background"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:text="Start Time"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/startDateTxt"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/endDateSlotStatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Select End Date and Time"
+            android:textAllCaps="false"
+            android:textColor="@color/black_dark"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintNCSStaic"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintEnddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/endDateSlotStatic">
+
+            <TextView
+                android:id="@+id/endDateTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/slot_background"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:text="End Date"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintEnd_toStartOf="@+id/endTimetxt"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/endTimetxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/slot_background"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:text="End Time"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/endDateTxt"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/addLocStatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/specify_the_range_for_your_ride_location_rides_will_be_provided_based_on_your_specified_locations"
+            android:textAllCaps="false"
+            android:textColor="@color/black_dark"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintEnddate"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintStartLoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addLocStatic">
+
+            <TextView
+                android:id="@+id/startLoc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/slot_background"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:drawableEnd="@drawable/pin"
+                android:text="@string/specify_your_starting_location"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintEndLoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintStartLoc">
+
+            <TextView
+                android:id="@+id/emdLocPoint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/slot_background"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:drawableEnd="@drawable/pin"
+                android:text="@string/specify_your_destination_location"
+                android:textAllCaps="false"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/createSlotsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="15dp"
+            android:text="Add"
+            android:background="@drawable/button_background_color"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/constraintEndLoc"
+            android:textColor="@color/white"
+            android:textSize="18dp"></androidx.appcompat.widget.AppCompatButton>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

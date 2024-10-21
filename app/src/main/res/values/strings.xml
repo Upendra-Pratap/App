@@ -1,0 +1,253 @@
+<resources>
+    <string name="app_name">Pasco Customer</string>
+    <string name="english">English</string>
+    <string name="continues">Continue</string>
+    <string name="log_in">Log in</string>
+    <string name="verify_your_account">Verify your account</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="signin"> Sign In</string>
+    <string name="unable_to_connect">Unable to connect to the internet please try again</string>
+    <string name="server_error">Server Error</string>
+
+    <string name="please_wait">Please Wait...\n</string>
+    <string name="login_error">Login error</string>
+    <string name="OK">Ok</string>
+    <string name="tips_annoucements_or_n_features_go_here_in_carousel">Tips, annoucements or \n features go here in carousel</string>
+    <string name="enter_4_digit_code_send_to">Enter 6-digit code send to</string>
+    <string name="glad_to_have_you_back_enter_your_credentials_n_to_log_in_to_your_account">Glad to have you back! Enter your credentials \n to log in to your account</string>
+    <string name="as_client">As Client</string>
+    <string name="as_driver">As Driver</string>
+    <string name="welcome">Welcome</string>
+    <string name="phone">Phone</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="full_name">User Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="register">Register</string>
+    <string name="notification">Notification</string>
+    <string name="orders">Orders</string>
+    <string name="more">More</string>
+    <string name="profile">Profile</string>
+    <string name="your_information_is_under_review_we_ll_contact_you_soon">Your information is under review. We\'ll contact you soon.</string>
+    <string name="ok">Ok</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="coupons">Coupons</string>
+    <string name="submit">Submit</string>
+    <string name="selectTransType">Select Transporter Type</string>
+    <string name="selectVehicleType">Select Category</string>
+    <string name="pick_start_point">Pickup Point</string>
+    <string name="pick_destination_point">Dropping Point</string>
+    <string name="cargo_qty">Cargo Qty</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="your_message">Your Message</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="google_key">AIzaSyA3KVnFOiaKNlhi4hJB8N2pB8tyoe_rRxQ</string>
+    <string name="expected_time">Expected Time</string>
+    <string name="booking">Booking Amount</string>
+    <string name="km">455 Km</string>
+    <string name="hr">7/hr</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="proceed">Proceed</string>
+    <string name="cancel">Cancel</string>
+    <string name="all_bidds">All Bids</string>
+    <string name="accept">Accepted</string>
+    <string name="custer_name">Custer Name</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="pickup">Pickup</string>
+    <string name="drop">Drop</string>
+    <string name="reject">Reject</string>
+    <string name="e_mail">Email</string>
+    <string name="history">History</string>
+    <string name="current_city">Current City</string>
+    <string name="pasco_rewards">Pasco Rewards</string>
+    <string name="notifications">Notifications</string>
+    <string name="_2021_01_22_05_56pm">2021-01-22-05:56PM</string>
+    <string name="are_you_sure_you_want_to_delete">Are you sure you want to Delete ?</string>
+    <string name="yes">Yes</string>
+    <string name="price">Price</string>
+    <string name="serial_no">Serial No.</string>
+    <string name="drivername">Driver Name</string>
+    <string name="abhi_gmail_com">Email</string>
+    <string name="home">Home</string>
+    <string name="check_approval_status">Check Approval Status</string>
+    <string name="message_driver">Message</string>
+    <string name="terms_and_conditions">Term and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="who_us">Who Us</string>
+    <string name="contact_with_us">Contact Us</string>
+    <string name="share_the_app">Share App</string>
+    <string name="log_out">Log out</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="bidding_details">Biding Details</string>
+    <string name="loyalty_program_list">Loyalty Program List</string>
+
+
+    // Driver
+
+    <string name="mobile_number">Mobile Number</string>
+    <string name="_1234567890">+ 1234567890</string>
+    <string name="password">Password</string>
+    <string name="abhi_123">Abhi@123</string>
+    <string name="verification_text">Please enter the vertication code sent to your number</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="enter_6_digit_code">Enter 6 - Digit code</string>
+    <string name="createaccount">Create New Account</string>
+    <string name="don_t_receive_the_code">Don\'t receive the code!</string>
+    <string name="resend_code">RESEND CODE</string>
+    <string name="username">User Name</string>
+    <string name="abcd_gmail_com">abcd@gmail.com</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="signup">SignUp</string>
+    <string name="forget_password">Forgot Password?</string>
+    <string name="with_a_valid_number_you_can_access_deliveries_and_other_services">With a valid number,you can access deliveries,and other services</string>
+    <string name="inactive">InActive</string>
+    <string name="active">Active</string>
+    <string name="my_account_driver">My Profile</string>
+    <string name="my_wallet_driver">My Wallet</string>
+    <string name="order_history_driver">Order History</string>
+    <string name="abhishek">Abhishek</string>
+    <string name="orderid">#23232</string>
+    <string name="order_price">Order Price</string>
+    <string name="_20_00">20.00$</string>
+    <string name="end_point">End Point</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="there_are_no_current_requests">There are currently no requests.</string>
+    <string name="accept_order">Accept order</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="my_account">My Account</string>
+    <string name="update">Update</string>
+    <string name="approval_status">Approval Status</string>
+    <string name="change_password">Change Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="are_you_sure_you_want_to_log_out">Are you sure you want to Log out?</string>
+    <string name="are_you_sure_you_want_to_accept_this_ride">Are you sure you want to accept this ride?</string>
+    <string name="order_sent_successfully_please_wait_for_the_customer_to_accept_the_ride">Order sent successfully. Please wait for the customer to accept the ride.</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="specify_the_range_for_your_ride_location_rides_will_be_provided_based_on_your_specified_locations">Specify the range for your ride location; rides will be provided based on your specified locations.</string>
+    <string name="cancel_reason">Cancel Reason</string>
+    <string name="total_wallet_balance"> Available Balance</string>
+    <string name="licence_no">Licence no</string>
+    <string name="emergency_number">Emergency Number</string>
+    <string name="arabic_language">Arabic Language</string>
+    <string name="english_lag">English</string>
+    <string name="selectStatus">Select Status\n</string>
+    <string name="selectCountryType">Select Country\n</string>
+    <string name="selectCity">Select City\n</string>
+    <string name="pickup_details">Pickup Point</string>
+    <string name="dropping_point">Dropping Point</string>
+    <string name="confirm_pickup_drop"><![CDATA[Confirm Pickup & Drop]]></string>
+    <string name="pickup_addressnotsame">Pickup address and Delivery address should not be same.</string>
+    <string name="pickup_point">PickUp Point</string>
+    <string name="search_location">Search Location</string>
+    <string name="customername">Abhishek Tiwari</string>
+    <string name="customeremail">abhi841501@gmail.com</string>
+    <string name="saved_addresses">Saved Addresses</string>
+    <string name="contact_support">Contact support</string>
+    <string name="terms_and_conditionss">Terms and Conditions</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="my_profile">My Profile</string>
+    <string name="truck">Truck</string>
+    <string name="distance">Distance :</string>
+    <string name="time">Time :</string>
+    <string name="_0_hours_0_minutes">0 hours 0 minutes</string>
+    <string name="select_vehicle">Select Vehicle</string>
+    <string name="_3500truckweight">3500 kg</string>
+    <string name="_3500_kg_14ft_6ft_6ft">3500 kg .14ft * 6ft * 6ft</string>
+    <string name="done">Done</string>
+    <string name="add_details">Add Details</string>
+    <string name="instructions_pick_up_point_instructions">Pick Point(Instructions)</string>
+    <string name="please_give_instructions">Please Give Instructions</string>
+    <string name="delivery_point_details">Delivery Point (Details)</string>
+    <string name="fill_all_details">Fill All Details</string>
+    <string name="add_money">Add Money</string>
+    <string name="choose_location">Choose Location</string>
+    <string name="update_location">Update Location</string>
+    <string name="ride_booking">Ride Booking</string>
+    <string name="warning">Warning</string>
+    <string name="you_must_be_allowed_to_access_your_location">You must be allowed to access your location</string>
+    <string name="give_permission_in_the_phone_settings">Give permission in the phone settings</string>
+    <string name="okay">Okay</string>
+    <string name="driver_name">Hello Abhishek</string>
+    <string name="order">Order</string>
+    <string name="submit_driver_profile">Submit</string>
+    <string name="confirm">Confirm</string>
+    <string name="bidding_date_time"><![CDATA[Biding Date&Time]]></string>
+    <string name="start_point">Start Point</string>
+    <string name="end_point_req">End Point</string>
+    <string name="thank_you_for_your_order">Thank you for your Order !</string>
+    <string name="please_add_your_notes">please add your notes...</string>
+    <string name="do_you_have_a_suggestion_let_us_know_in_the_below">Do you have a suggestion? Let us know in the below.</string>
+    <string name="type_your_feedback_message">Type your feedback message...</string>
+    <string name="specify_your_destination_location">Specify your destination location</string>
+    <string name="specify_your_starting_location">Specify your starting location</string>
+    <string name="update_vehicle_details">Update Vehicle Details</string>
+    <string name="driving_doc">Driving Doc</string>
+    <string name="vehicle_image">Vehicle Image</string>
+    <string name="vehicle_rc">Vehicle RC</string>
+    <string name="change_language">Change Language</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="wallet">Wallet</string>
+    <string name="biding_status">Biding Status</string>
+    <string name="please_update_your_profile_first">Please update your profile first !</string>
+    <string name="language">Language</string>
+    <string name="additional_service">Additional Service(Optional)</string>
+    <string name="your_information_is_under_review_you_are_not_approved_by_the_admin">Your information is under review. You are not approved by the admin</string>
+    <string name="currently_no_bids_are_available">Currently, no bids are available.</string>
+    <string name="commission_price">Commission Price</string>
+    <string name="share_subject">Check out this app!</string>
+    <string name="share_message">Check out this amazing app: %1$s</string>
+    <string name="share_via">Share via</string>
+    <string name="completed">Completed</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="final_cost">Final cost</string>
+    <string name="booking_cancel">Booking Cancel</string>
+    <string name="are_you_sure_you_want_to_cancel_booking">Are you sure you want to cancel booking?</string>
+    <string name="resend_otp">Resend OTP :</string>
+    <string name="duration">duration</string>
+</resources>

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Driver.BookingHistoryDetailsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/dashborad_top_shape_back">
+
+
+        <ImageView
+            android:id="@+id/backArrowImgBhdDetails"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back"
+            app:tint="@color/black_dark" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="70dp"
+            android:text="Ride Details"
+            android:textColor="@color/black_dark"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Number"
+                    android:textSize="@dimen/text_size_16"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="10"
+                android:background="@drawable/black_box_corner"
+                android:elevation="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/BookingNoBD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="UR23D12345656456"
+                    android:textSize="@dimen/normal_txt_size"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black_dark"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick Up Point"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:elevation="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp">
+
+                <RelativeLayout
+                    android:id="@+id/pickUpPoint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/black_box_corner"
+                    android:layout_weight="9"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pickUpPointBD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Noida,Uttar Pradesh"
+                        android:textSize="@dimen/normal_txt_size"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_dark"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/exmarkStartingPoint"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/exclamation_mark"
+                    android:layout_weight="1">
+
+                </ImageView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Point"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:elevation="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="9"
+                    android:background="@drawable/black_box_corner"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/DeliveryPointBD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Delhi, India"
+                        android:textSize="@dimen/normal_txt_size"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_dark"/>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/exmarkDelivery"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/exclamation_mark"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick Up Day"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="10"
+                android:background="@drawable/black_box_corner"
+                android:elevation="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/PickUpDayBD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="2021-10-23"
+                    android:textSize="@dimen/normal_txt_size"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black_dark"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick Up Time"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="10"
+                android:background="@drawable/black_box_corner"
+                android:elevation="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/PickUpTimeBD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="02:43 PM"
+                    android:textSize="@dimen/normal_txt_size"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black_dark"/>
+
+
+            </RelativeLayout>
+
+
+            <!--    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Do you need COD service where the partner transporter will pay the
+            goods/items first on the behalf of the reciever(up to 2000 pesos only)?"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonConfmOD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="20dp"
+                    android:checked="true"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/green"
+                    android:text="Yes, I need partner transporter to pay first and paid and be paid by the reciever."
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:weightSum="10"
+                    android:background="@drawable/phone_number_background"
+                    android:elevation="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="50.00"
+                        android:textSize="15dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/light_black"/>
+
+
+
+                </RelativeLayout>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="20dp"
+                            android:checked="true"
+                            android:layout_marginTop="10dp"
+                            android:buttonTint="@color/green"
+                            android:text="No the goods/items are paid already."
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="20dp"
+                            android:checked="true"
+                            android:layout_marginTop="10dp"
+                            android:buttonTint="@color/green"
+                            android:text="No, sender and reciever have payment agreement between them."
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Distance"
+                            android:textSize="17dp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:weightSum="10"
+                            android:background="@drawable/phone_number_background"
+                            android:elevation="1dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/distanceOD"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:text="30.30 Km"
+                                android:textSize="15dp"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/light_black"/>
+
+
+                        </RelativeLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="10"
+                android:background="@drawable/black_box_corner"
+                android:elevation="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/priceBD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="323.00"
+                    android:textSize="@dimen/normal_txt_size"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black_dark"/>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Name"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="10"
+                android:background="@drawable/black_box_corner"
+                android:elevation="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/VehicleNameBD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Motor Cycle"
+                    android:textSize="@dimen/normal_txt_size"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black_dark"/>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancellation Reason"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="10"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/black_box_corner"
+                android:elevation="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Too much waiting time"
+                    android:textSize="@dimen/normal_txt_size"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black_dark"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ordercompletd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_radius1"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consSDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintWidth_percent="1">
+
+
+            <TextView
+                android:id="@+id/serialNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/serial_no"
+                app:layout_constraintWidth_percent=".4"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/SrNoTxtDetailsCl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_txt_size13"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/serialNo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/countryStatic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Country"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:visibility="gone"
+                android:textStyle="bold"
+                app:layout_constraintWidth_percent=".4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/serialNo" />
+            <TextView
+                android:id="@+id/countryDynamicCl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="India"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_txt_size13"
+                app:layout_constraintStart_toEndOf="@+id/countryStatic"
+                app:layout_constraintTop_toBottomOf="@+id/serialNo"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <TextView
+                android:id="@+id/poiTypeStatic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="POI Type"
+                android:textStyle="bold"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/countryDynamicCl"
+                app:layout_constraintWidth_percent=".4" />
+
+            <TextView
+                android:id="@+id/poiTypeDynamicCl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="abhi4324@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintStart_toEndOf="@+id/poiTypeStatic"
+                app:layout_constraintTop_toBottomOf="@+id/countryDynamicCl"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+            <TextView
+                android:id="@+id/providerNameStatic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Name"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintWidth_percent=".4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/poiTypeStatic" />
+
+            <TextView
+                android:id="@+id/providerNameDynamicCl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Abhi"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_txt_size13"
+                app:layout_constraintStart_toEndOf="@+id/providerNameStatic"
+                app:layout_constraintTop_toBottomOf="@+id/poiTypeDynamicCl"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/couponTypeStatic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Coupon Code"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintWidth_percent=".4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/providerNameStatic" />
+
+
+            <TextView
+                android:id="@+id/couponTypeDynamicCl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Hotel"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_txt_size13"
+                app:layout_constraintStart_toEndOf="@+id/providerNameStatic"
+                app:layout_constraintTop_toBottomOf="@+id/providerNameDynamicCl"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/CouponUsedByStatic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Coupon Used By"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/couponTypeStatic"
+                app:layout_constraintWidth_percent=".4" />
+
+
+            <ImageView
+                android:id="@+id/seeViewDetails"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/eye"
+                app:layout_constraintStart_toEndOf="@+id/couponTypeStatic"
+                app:layout_constraintTop_toBottomOf="@+id/couponTypeDynamicCl"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"
+                app:tint="@color/red" />
+
+
+            <TextView
+                android:id="@+id/LimitStatic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Limit"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintWidth_percent=".4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/CouponUsedByStatic" />
+
+            <TextView
+                android:id="@+id/LimitStaticDynamicCl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_txt_size13"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toEndOf="@+id/LimitStatic"
+                app:layout_constraintTop_toBottomOf="@+id/CouponUsedByStatic"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

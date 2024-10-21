@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_font_size_16">16sp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="log_in_txt_size">26sp</dimen>
+    <dimen name="normal_txt_size">14sp</dimen>
+    <dimen name="normal_txt_size_12">12sp</dimen>
+    <dimen name="normal_txt_size1">11sp</dimen>
+    <dimen name="normal_txt_size9">10sp</dimen>
+    <dimen name="normal_txt_size13">13sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

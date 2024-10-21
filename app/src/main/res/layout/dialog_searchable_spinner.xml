@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select City"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_20"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/search_back"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        >
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchCountryName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:iconifiedByDefault="false"
+            android:background="@null"
+            app:queryHint="Search"
+            app:queryBackground="@android:color/transparent"
+            app:searchIcon="@null"/>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15sp"
+        android:id="@+id/searchableSpinnerRecycleView"/>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Driver.DriverWallet.DriverWalletActivity">
+
+
+    <LinearLayout
+        android:id="@+id/MainLinearHis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:id="@+id/totalbalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_wallet_balance"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/accountBalanceDri"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="USD"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/log_in_txt_size"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/withDrawBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/accountBalance"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_background_color"
+            android:gravity="center"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_txt_size_12"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearTransactionLimitt"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        app:layout_constraintWidth_percent=".7"
+        android:background="@drawable/transaction_devit"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainLinearHis"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/text_size_16"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/historyText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:background="@drawable/debit_background"
+            android:layout_weight="1"
+            android:text="History"/>
+
+
+        <TextView
+            android:id="@+id/crediText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black_dark"
+            android:background="@drawable/creditback"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            android:text="Transactions"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycerEarningList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearTransactionLimitt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

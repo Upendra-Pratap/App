@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".application.PascoApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher1_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PascoCustomer"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".chat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.customerDetails.CustomerDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer.activity.driverdetails.DriverDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.NotesRemainders.Ui.NotesRemainderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer.activity.track.TrackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.DriverWallet.DriverWalletActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer.activity.updatevehdetails.UpdateVehicleDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.adapter.TermsAndConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.DriverMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.CouponUsedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.ContactWithUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.BookingHistoryDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.CreateDriverAvailabilityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.UpdateLocation.Ui.UpdateLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.StartRiding.Ui.DriverStartRidingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.Fragment.DriverAllBiddsDetail.Ui.DriverAllBiddsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.EmergencyResponse.Ui.EmergencyCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.DriverDashboard.Ui.DriverDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.ApprovalStatus.Ui.ApprovalStatusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.CouponDetails.Ui.CouponsAndEarningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.AcceptRideDetails.Ui.AcceptRideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer.activity.notificaion.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer.activity.allbiddsdetailsactivity.AllBiddsDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".location.LocationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer.activity.hometabactivity.AllTabPayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard.UserDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".commonpage.login.LoginOtpVerifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer.activity.vehicledetailactivity.VehicleDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.pasco.pascocustomer.dashboard.UserDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".commonpage.login.signup.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".commonpage.login.signup.OtpVerifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".commonpage.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer.activity.ChooseLanguageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".pushnotification.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCiSh4VnnI1jemtZTytDoj2X7Wl6evey30" />
+    </application>
+
+</manifest>

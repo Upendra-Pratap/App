@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ordercompletd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_radius1"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consSDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintWidth_percent="1">
+
+
+            <TextView
+                android:id="@+id/serialNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/serial_no"
+                app:layout_constraintWidth_percent=".4"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/SrNoTxtDetailsEmer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_txt_size13"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/serialNo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/countryStatic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Country Name"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintWidth_percent=".4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/serialNo" />
+            <TextView
+                android:id="@+id/countryDynamicEp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="India"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_txt_size13"
+                app:layout_constraintStart_toEndOf="@+id/countryStatic"
+                app:layout_constraintTop_toBottomOf="@+id/serialNo"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <TextView
+                android:id="@+id/CityStatic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Emergency Number"
+                android:textStyle="bold"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/countryDynamicEp"
+                app:layout_constraintWidth_percent=".4" />
+
+            <TextView
+                android:id="@+id/PhoneNoDynamicEp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="7281915368"
+                android:textColor="@color/red"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintStart_toEndOf="@+id/CityStatic"
+                app:layout_constraintTop_toBottomOf="@+id/countryDynamicEp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/CouponUsedByStatic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Call"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CityStatic"
+                app:layout_constraintWidth_percent=".4" />
+
+
+            <LinearLayout
+                android:id="@+id/callLinear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintWidth_percent=".5"
+                android:layout_marginStart="@dimen/text_size_20"
+                app:layout_constraintStart_toEndOf="@+id/CityStatic"
+                app:layout_constraintTop_toBottomOf="@+id/PhoneNoDynamicEp">
+
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/candidatescircle">
+
+                    <ImageView
+                        android:id="@+id/ImgCalling"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/black"
+                        android:src="@drawable/smartphone"
+                        app:tint="@color/black" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

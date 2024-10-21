@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ordercompletd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_radius1"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consSDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintWidth_percent="1">
+
+
+            <TextView
+                android:id="@+id/serialNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/serial_no"
+                app:layout_constraintWidth_percent=".4"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/SrNoTxtDetailsLCouponUsedBy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_txt_size13"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/serialNo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/countryStatic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Driver"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintWidth_percent=".4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/serialNo" />
+            <TextView
+                android:id="@+id/countryDynamic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="Shubham"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_txt_size13"
+                app:layout_constraintStart_toEndOf="@+id/countryStatic"
+                app:layout_constraintTop_toBottomOf="@+id/serialNo"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <TextView
+                android:id="@+id/CityStatic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Coupon Code"
+                android:textStyle="bold"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/countryDynamic"
+                app:layout_constraintWidth_percent=".4" />
+
+            <TextView
+                android:id="@+id/cityDynamic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="dew1220"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintStart_toEndOf="@+id/CityStatic"
+                app:layout_constraintTop_toBottomOf="@+id/countryDynamic"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/usedStaic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Used/Not Used"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CityStatic"
+                app:layout_constraintWidth_percent=".4" />
+
+
+            <TextView
+                android:id="@+id/usedNDynamic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Not Used"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/CityStatic"
+                app:layout_constraintTop_toBottomOf="@+id/cityDynamic"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"/>
+
+            <TextView
+                android:id="@+id/createdDateStatic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Created Date"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/usedStaic"
+                app:layout_constraintWidth_percent=".4" />
+
+
+            <TextView
+                android:id="@+id/createdDateDynamic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="24-12-2024"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toEndOf="@+id/usedStaic"
+                app:layout_constraintTop_toBottomOf="@+id/usedNDynamic"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintWidth_percent=".5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

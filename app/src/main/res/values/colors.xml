@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#D5A863</color>
+    <color name="purple_700">#D5A863</color>
+    <color name="teal_200">#9F7A3D</color>
+    <color name="teal_700">#9F7A3D</color>
+    <color name="black">#FF000000</color>
+    <color name="black_new">#2F2F2F</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#C0B3B3</color>
+    <color name="earth_yellow">#D5A863</color>
+    <color name="old_lace">#FFF4E3</color>
+    <color name="grey_dark"> #575757</color>
+    <color name="trans"> #9F7A3D</color>
+    <color name="creme"> #F6F6F6</color>
+    <color name="green">#0ABC3C</color>
+    <color name="dark_red">#BC2A0A</color>
+    <color name="cultured">#F4F4F4</color>
+    <color name="dialogBackground">#60000000</color>
+    <color name="dark_white1">#9E9C9C</color>
+    <color name="logo_color">#D5A760</color>
+    <color name="greyWhite">#F2F2F7</color>
+    <color name="darkgrey">#54534D</color>
+    <color name="darkWhite">#E8F2FF</color>
+    <color name="red">#A51818</color>
+
+    <color name="darkred">#FFE8E8</color>
+    <color name="blue">#3853ED</color>
+    <color name="lightyellow">#EFBA1D</color>
+    <color name="yellow_light">#8FEFBA1D</color>
+    <color name="background_color">#00000000</color>
+    <color name="darkWhite1">#F2F2F2</color>
+    <color name="whitedarkDcolor">#F4F4F4</color>
+    <color name="black_dark">#383F45</color>
+    <color name="black_box">#2F2F2F</color>
+</resources>

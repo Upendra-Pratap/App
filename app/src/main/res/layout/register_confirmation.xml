@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_constraintStart_toStartOf="parent"
+    android:background="@drawable/border_radius"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:padding="20dp"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp">
+    </ProgressBar>
+
+
+    <TextView
+        android:id="@+id/confirmationTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent=".7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        android:text="@string/your_information_is_under_review_we_ll_contact_you_soon">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/okButtonAR"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_background"
+        android:text="@string/ok"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmationTxt"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_goneMarginTop="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

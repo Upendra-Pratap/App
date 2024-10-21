@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/NewConstraintDetailsss"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/order_details_radius"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".93">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/nameAndPendingConst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintWidth_percent="0.93">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/driverSeeUserProfile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/clientNameOrdR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Manasdasdasdasdsaddsadsasi"
+                android:textColor="@color/logo_color"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold"
+                app:layout_constraintWidth_percent=".7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/driverSeeUserProfile"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/driverSeeUserProfile"
+                app:layout_constraintTop_toBottomOf="@+id/clientNameOrdR"
+                app:layout_constraintStart_toStartOf="@+id/clientNameOrdR"
+                app:layout_constraintWidth_percent="0.5">
+
+                <TextView
+                    android:id="@+id/avail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avail :"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/orderDetailDR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 2025-05-12 12:52 PM"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/normal_txt_size_12"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/avail"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintUserNRatingg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/nameAndPendingConst"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent=".93">
+
+            <!-- First TextView -->
+            <TextView
+                android:id="@+id/orderIdODR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Order ID :"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/orderIdDynamicDORD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="xd1212344343"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/normal_txt_size13"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/orderIdODR" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintOrderPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintUserNRatingg"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent=".93">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/codddasdas"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+                <!-- First TextView -->
+                <TextView
+                    android:id="@+id/fromStatic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Pickup"
+                    android:drawableEnd="@drawable/small_loc_icon"
+                    android:textColor="@color/black"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/logo_color"
+                    android:textSize="@dimen/normal_txt_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/pickUpDetailsORD"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="B 36, B Bloack sector 59 noida"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/normal_txt_size_12"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/fromStatic"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintDropORD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintOrderPrice"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent=".93">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/codddORD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+
+
+                <!-- First TextView -->
+                <TextView
+                    android:id="@+id/fromStaticDrop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Drop"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    android:drawableRight="@drawable/small_loc_icon"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/logo_color"
+                    android:textSize="@dimen/normal_txt_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/DropDetailsORD"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="B 36, B Bloack sector 59 noida"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/normal_txt_size_12"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/fromStaticDrop"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consDiatnceORD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintDropORD"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent=".93">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+
+
+                <!-- First TextView -->
+                <TextView
+                    android:id="@+id/fromStaticDist"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Distance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_txt_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/distanceDORD"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="10km"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/normal_txt_size_12"
+                    app:layout_goneMarginStart="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/fromStaticDist"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consBpCPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/consDiatnceORD"
+            app:layout_constraintWidth_percent=".93"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+
+            <!-- First TextView -->
+            <TextView
+                android:id="@+id/totalPricestatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintWidth_percent=".2"
+                android:text="Basic Price:"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/totalPricestaticDORD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="$200"
+                app:layout_constraintWidth_percent=".3"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/totalPricestatic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/maxPriceStaticDORD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bid Price:"
+                app:layout_constraintWidth_percent=".2"
+                android:textColor="@color/black"
+                android:gravity="right"
+                android:padding="4dp"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/maxPriceDORD"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/maxPriceDORD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="$500"
+                app:layout_constraintWidth_percent=".2"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consCommPriceDriver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/consBpCPrice"
+            app:layout_constraintWidth_percent=".93"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/commStaticTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commission Price:"
+                app:layout_constraintWidth_percent=".2"
+                android:textColor="@color/black"
+                android:gravity="right"
+                android:textSize="@dimen/normal_txt_size"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/cPriceDORD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="$500"
+                app:layout_constraintWidth_percent=".2"
+                android:textColor="@color/green"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:textSize="@dimen/normal_txt_size"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/commStaticTextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

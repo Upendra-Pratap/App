@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/earth_yellow"
+    tools:context=".userFragment.profile.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profileContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="6dp"
+            android:src="@drawable/home_bg"
+            app:civ_border_color="@color/earth_yellow"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/editProfileBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profileImg"
+            app:layout_constraintEnd_toEndOf="@+id/profileImg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/camera"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="UseAppTint" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/login_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.7">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Details"
+                        android:layout_marginLeft="@dimen/text_size_20"
+                        android:layout_marginTop="20dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/editDataConst"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="70dp"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/contact_user_name_container"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:background="@drawable/all_circle_border"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintWidth_percent=".9">
+
+
+                            <ImageView
+                                android:id="@+id/loginPassIcon"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:padding="14dp"
+                                android:src="@drawable/user"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:tint="@color/earth_yellow" />
+
+
+                            <EditText
+                                android:id="@+id/userName"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:hint="Name"
+                                android:paddingLeft="10dp"
+                                android:textSize="16dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/loginPassIcon"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/contact_user_email_container"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/all_circle_border"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/contact_user_name_container"
+                            app:layout_constraintWidth_percent=".9">
+
+
+                            <ImageView
+                                android:id="@+id/contactUsgmailIcon"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:padding="14dp"
+                                android:src="@drawable/email"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:tint="@color/earth_yellow" />
+
+
+                            <EditText
+                                android:id="@+id/emailTxtA"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:hint="@string/e_mail"
+                                android:inputType="textEmailAddress"
+                                android:paddingLeft="8dp"
+                                android:textSize="16dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/contactUsgmailIcon"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/currentCityConst"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/all_circle_border"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/contact_user_email_container"
+                            app:layout_constraintWidth_percent=".9">
+
+
+                            <ImageView
+                                android:id="@+id/cityImg"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:padding="14dp"
+                                android:src="@drawable/pin"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:tint="@color/earth_yellow" />
+
+
+                            <EditText
+                                android:id="@+id/currentCityTxt"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:hint="@string/current_city"
+                                android:inputType="textEmailAddress"
+                                android:paddingLeft="8dp"
+                                android:textSize="16dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/cityImg"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/updateBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/button_background"
+                            android:gravity="center"
+                            android:text="Update"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_font_size_16"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/currentCityConst"
+                            app:layout_constraintStart_toStartOf="@+id/currentCityConst"
+                            app:layout_constraintTop_toBottomOf="@+id/currentCityConst"
+                            app:layout_constraintWidth_percent=".6" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

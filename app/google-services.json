@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "213730493900",
+    "project_id": "pascocustomer",
+    "storage_bucket": "pascocustomer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213730493900:android:cfc63b1e79a63991258969",
+        "android_client_info": {
+          "package_name": "com.pasco.pascocustomer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbI0rISAFoA9jeIhNa0ZX-fkhGgFqghCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

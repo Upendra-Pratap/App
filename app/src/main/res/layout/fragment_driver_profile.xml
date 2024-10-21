@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/logo_color"
+    tools:context=".Driver.Fragment.DriverProfile.DriverProfileFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/consMainP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/firstLay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/topProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/my_account_driver"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cricleImgDp"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_launcher_background"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent=".3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topProfile"
+                app:layout_constraintWidth_percent=".3"/>
+
+            <ImageView
+                android:id="@+id/addImgDProfile"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/camera"
+                app:layout_constraintBottom_toBottomOf="@+id/cricleImgDp"
+                app:layout_constraintStart_toEndOf="@+id/cricleImgDp"
+                app:tint="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consMainP"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/left_right_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLayout">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="39dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Personal Details"
+                        android:textColor="@color/black_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/editButtonDriverProfile"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/edit_pen" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/userName_driverP"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="39dp"
+                    android:background="@drawable/all_circle_border"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="23dp"
+                        android:src="@drawable/user" />
+
+                    <EditText
+                        android:id="@+id/driverUserNameP"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5.3"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="User Name"
+                        android:inputType="text"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/black_box"
+                        android:textColorHint="@color/dark_white1"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/email_driverP"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="39dp"
+                    android:background="@drawable/all_circle_border"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="23dp"
+                        android:src="@drawable/email" />
+
+                    <EditText
+                        android:id="@+id/driverEmailP"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5.3"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="Email"
+                        android:inputType="textWebEmailAddress"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/black_box"
+                        android:textColorHint="@color/dark_white1"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/numberDriverStaticP"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="@dimen/text_size_16"
+                    android:layout_marginRight="39dp"
+                    android:background="@drawable/all_circle_border"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="23dp"
+                        android:src="@drawable/smartphone" />
+
+                    <TextView
+                        android:id="@+id/driverNoP"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5.3"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:paddingLeft="15dp"
+                        android:text="Mobile No"
+                        android:textColor="@color/black_box"
+                        android:textColorHint="@color/dark_white1"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vehicleTypeStaticP"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="@dimen/text_size_16"
+                    android:layout_marginRight="39dp"
+                    android:background="@drawable/all_circle_border"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="6">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="23dp"
+                        android:src="@drawable/pin" />
+
+                    <TextView
+                        android:id="@+id/driverAddressP"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5.3"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:text="Address"
+                        android:inputType="text"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/black_box"
+                        android:textColorHint="@color/dark_white1"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/normal_txt_size" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/update_btndp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="39dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="39dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_background_color"
+                        android:gravity="center"
+                        android:text="@string/submit_driver_profile"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textFontWeight="700"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
