@@ -55,13 +55,13 @@ class MainActivity : AppCompatActivity() {
                 "com.app.food",
                 PackageManager.GET_SIGNATURES
             )
-            for (signature in info.signatures) {
+            for (signature in info.signatures!!) {
                 val md: MessageDigest = MessageDigest.getInstance("SHA")
                 md.update(signature.toByteArray())
                 Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT))
             }
-        } catch (e: PackageManager.NameNotFoundException) {
-        } catch (e: NoSuchAlgorithmException) {
+        } catch (_: PackageManager.NameNotFoundException) {
+        } catch (_: NoSuchAlgorithmException) {
         }
 
 

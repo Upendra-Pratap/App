@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId "com.pasco.pascocustomer"
-        minSdk 23
+        minSdk 24
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -54,6 +54,7 @@ android {
     buildFeatures {
         viewBinding true
         //dataBinding true
+        buildConfig = true
     }
 
     dataBinding {
@@ -67,6 +68,8 @@ dependencies {
 
     implementation 'androidx.core:core-ktx:1.13.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
     //implementation 'com.google.android.material:material:1.11.0'
     implementation "com.google.android.material:material:1.13.0-alpha01"
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
